@@ -226,6 +226,12 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Mattes Groeger";
+				TargetAttributes = {
+					AD3B30B9181408B500D0AA5B = {
+						DevelopmentTeam = L5349F4D4A;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = AD3B30B5181408B500D0AA5B /* Build configuration list for PBXProject "TravisExample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -472,6 +478,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L5349F4D4A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				HOCKEY_APP_ID = "";
@@ -488,7 +496,8 @@
 			baseConfigurationReference = 5E909003959A4C8F98628FAB /* Pods.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = L5349F4D4A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TravisExample/TravisExample-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (

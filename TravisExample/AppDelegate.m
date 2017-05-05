@@ -21,7 +21,7 @@
 #ifdef RELEASE
 	// Initialize TestFlight
 	[TestFlight takeOff:NSStringize(TESTFLIGHT_APP_TOKEN)];
-
+ 
 	// Initialize HockeyApp
 	NSString *hockeyAppIdentifier = NSStringize(HOCKEY_APP_ID);
 	[[BITHockeyManager sharedHockeyManager] configureWithBetaIdentifier:hockeyAppIdentifier
